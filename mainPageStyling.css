@@ -1,0 +1,53 @@
+body{
+  margin:0;
+  padding:0;
+}
+
+.noUnderLineLink{
+  text-decoration:none;
+}
+
+#selfThumbnail{
+  height:100%;
+  width:100%;
+  border-radius:15px;
+}
+
+.column1{
+  width: 24%;
+  text-align:center;
+}
+
+.column2{
+  width:50%;
+}
+
+.column3{
+  width:24%;
+}
+
+.row{
+  width:100%;
+  margin:0;
+  padding:0; 
+}
+
+.column{
+  display:inline-block;
+  vertical-align:text-top;
+  margin:0;
+  padding:0;
+}
+
+.header{
+  width:100%;
+  text-align:center;
+  margin:0;
+  padding:0;
+}
+
+.footer{
+  width:100%;
+  margin:0;
+  padding:0;
+}
