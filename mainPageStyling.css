@@ -54,8 +54,9 @@ body{
   display: inline-block;
 }
 
-#aboutme{
-    padding-top: 30%;
+.heading{
+	padding-left: 15px;
+	text-decoration: underline;
 }
 
 #aboutmedescription{
@@ -63,16 +64,10 @@ body{
     padding-right: 15px;
 }
 
-#findme{
-    padding-top: 85%;
-}
-
-#work{
-    padding-top: 30%;
-}
 
 #workdescription{
-    padding: 15px;
+    padding-left: 15px;
+	padding-right: 15px;
     padding-bottom: 50px;
 }
 
