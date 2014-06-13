@@ -1,5 +1,5 @@
 body{
-  background-image: url(../img/dark_wood.png); /* credit: subtlepatterns.com */
+  background-image: url(dark_wood.png); /* credit: subtlepatterns.com */
   background-color: black;
   color: #FFFFFF;
   padding: 0px;
@@ -41,14 +41,14 @@ body{
 }
 
 #linkedin{
-  background: url(../img/linkedin.png) no-repeat 6px center;
+  background: url(linkedin.png) no-repeat 6px center;
   height: 71px;
   width: 68px;
   display: inline-block;
 }
 
 #github{
-  background: url(../img/github.png) no-repeat 6px center;
+  background: url(github.png) no-repeat 6px center;
   height: 71px;
   width: 70px;
   display: inline-block;
