@@ -94,7 +94,7 @@ hr{
 }
 
 .column{
-  height: 100%;
+  min-height: 20%;
   display: inline-block;
   vertical-align: text-top;
 }
@@ -103,7 +103,7 @@ hr{
   font-family: helvetica;
   font-weight: normal;
   margin-left: 21%;
-  padding-top: 0.5%;
+  padding-top: 0.9%;
   display: inline-block;
 }
 
