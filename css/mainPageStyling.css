@@ -105,21 +105,21 @@ hr{
 }
 
 #linkedin{
-  background: url(linkedin.png) no-repeat 6px center;
+  background: url(../img/linkedin.png) no-repeat 6px center;
   height: 71px;
   width: 68px;
   display: inline-block;
 }
 
 #github{
-  background: url(github.png) no-repeat 6px center;
+  background: url(../img/github.png) no-repeat 6px center;
   height: 71px;
   width: 70px;
   display: inline-block;
 }
 
 #emaillink{
-  background: url(emailicon.png) no-repeat 6px center;
+  background: url(../img/emailicon.png) no-repeat 6px center;
   height: 128px;
   width: 128px;
   display: inline-block;
