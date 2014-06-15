@@ -1,4 +1,11 @@
+html{
+  height: 100%;
+  width: 100%;
+}
+
 body{
+  height: 100%;
+  width: 100%;
   color: #000000;
   padding: 0px;
   margin: 0px;
@@ -37,7 +44,6 @@ body{
 
 #selfThumbnail{
   width: 50%;
-  height: auto%;
   float: left;
   border-radius: 10px;
 }
@@ -52,19 +58,15 @@ hr{
 }
 
 .navbutton{
-  display: inline-block;
-  width: 10em;  height: 3em;
+  width: 10em;
   float: right;
-  padding: 0;
-  border: none;
-  background: none;
   color: #475A24;
   border-radius: 10px;
+  text-align: center;
 }
 
 .navbar{
   margin-top: 30px;
-  display: inline-block;
   float: right;
   margin-right: 30%;
 }
@@ -92,6 +94,7 @@ hr{
 }
 
 .column{
+  height: 100%;
   display: inline-block;
   vertical-align: text-top;
 }
