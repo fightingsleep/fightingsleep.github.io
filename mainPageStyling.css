@@ -20,11 +20,11 @@ body{
 }
 
 #socialnetworks{
-    font-size: 1.5em;
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 35px;
-	margin-bottom: -35px;
+  font-size: 1.5em;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 35px;
+  margin-bottom: -35px;
 }
 
 #sendemail{
@@ -88,7 +88,7 @@ hr{
 }
 
 .column3{
-	width: 25%;
+  width: 25%;
 }
 
 .column{
@@ -132,8 +132,8 @@ hr{
 }
 
 #links{
-    padding-top: 2px;
-    padding-left: 15px;
+  padding-top: 2px;
+  padding-left: 15px;
 }
 
 #header{
