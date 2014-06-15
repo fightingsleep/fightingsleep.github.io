@@ -59,10 +59,10 @@ hr{
 
 .navbutton{
   width: 10em;
-  float: right;
   color: #475A24;
   border-radius: 10px;
   text-align: center;
+  display: inline-block;
 }
 
 .navbar{
