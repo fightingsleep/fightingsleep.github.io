@@ -58,7 +58,7 @@ hr{
 }
 
 .navbutton{
-  width: 9.7em;
+  width: 9em;
   color: #475A24;
   border-radius: 10px;
   text-align: center;
@@ -68,7 +68,7 @@ hr{
 .navbar{
   margin-top: 30px;
   float: right;
-  margin-right: 20%;
+  margin-right: 35%;
 }
 
 .navbutton:hover{
