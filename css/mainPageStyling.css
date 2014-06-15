@@ -46,6 +46,7 @@ body{
   width: 50%;
   float: left;
   border-radius: 10px;
+  margin-left: 15px;
 }
 
 hr{
@@ -58,7 +59,7 @@ hr{
 }
 
 .navbutton{
-  width: 9em;
+  width: 25%;
   color: #475A24;
   border-radius: 10px;
   text-align: center;
@@ -66,9 +67,8 @@ hr{
 }
 
 .navbar{
-  margin-top: 30px;
-  float: right;
-  margin-right: 21%;
+  width: 60%;
+  display: inline-block;
 }
 
 .navbutton:hover{
@@ -102,9 +102,8 @@ hr{
 #title{
   font-family: helvetica;
   font-weight: normal;
-  margin-left: 21%;
-  padding-top: 0.9%;
   display: inline-block;
+  width: 40%;
 }
 
 #linkedin{
@@ -128,17 +127,6 @@ hr{
   display: inline-block;
 }
 
-#maindescription{
-  margin-top: 0px;
-  padding: 15px;
-  padding-top: 0px;
-}
-
-#links{
-  padding-top: 2px;
-  padding-left: 15px;
-}
-
 #header{
   width: 100%;
   margin-top: 3%;
@@ -152,10 +140,8 @@ hr{
 
 #footerright{
   float:right;
-  padding-right:26%;
 }
 
 #footerleft{
   float:left;
-  padding-left:21%;
 }
