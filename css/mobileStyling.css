@@ -11,3 +11,24 @@
   padding-left: 5%;
   padding-right: 5%;
 }
+
+#emaillink{
+  background: url(../img/emailicon.png) no-repeat 6px center;
+  height: 128px;
+  width: 128px;
+  display: block;
+}
+
+#linkedin{
+  background: url(../img/linkedin.png) no-repeat 6px center;
+  height: 71px;
+  width: 68px;
+  display: block;
+}
+
+#github{
+  background: url(../img/github.png) no-repeat 6px center;
+  height: 71px;
+  width: 70px;
+  display: block;
+}
