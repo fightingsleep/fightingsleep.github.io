@@ -14,7 +14,7 @@ $(document).ready(function(){
       others, and solve problems without large amounts of instruction.<br><br>Aside from\
       computer science I am also very interested in physics. I have taken multiple\
       physics classes as electives, and I would take more if I could. If I am not studying something\
-      computer science related, then I am most likely keeping up-to-date with recent physics news.\
+      computer science related, than I am most likely keeping up-to-date with recent physics news.\
       <br><br>Other than school and studying I enjoy playing sports with my friends,\
       learning new instruments, and listening to music.<br><br>");
   });
