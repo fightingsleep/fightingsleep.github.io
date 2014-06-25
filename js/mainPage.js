@@ -12,10 +12,10 @@ $(document).ready(function(){
       University of Saskatchewan. My interest in programming began when I was very young, and I have\
       pursued it in both high school and now university. I pride myself on my ability to work with \
       others, and solve problems without large amounts of instruction.<br><br>Aside from\
-      computer science I am also very interested in physics and astronomy. I have taken multiple\
+      computer science I am also very interested in physics. I have taken multiple\
       physics classes as electives, and I would take more if I could. If I am not studying something\
-      computer science related, then I am most likely keeping up-to-date with these two other\
-      subjects.<br><br>Other than school and studying I enjoy playing sports with my friends,\
+      computer science related, then I am most likely keeping up-to-date with recent physics news.\
+      <br><br>Other than school and studying I enjoy playing sports with my friends,\
       learning new instruments, and listening to music.<br><br>");
   });
 		
@@ -35,11 +35,9 @@ $(document).ready(function(){
   });
 
   $("#contactbtn").click(function() {
-    $("#maindescription").html("<div><a id=\"emaillink\" href=\"mailto:chrislross@hotmail.com\">\
-                                </a><div id=\"emailarrow\">&#8592;</div><div id=\"sendemail\">Click\
-                                here to send me an email</div></div><div><div id=\"socialnetworks\">\
-                                Or message me on my social networks!</div><div id=\"linksarrow\">&#8601\
-                                </div></div>");
+    $("#maindescription").html("<h4>You can contact me by email at chrislross@hotmail.com</h4>\
+                                <a id=\"emaillink\" href=\"mailto:chrislross@hotmail.com\"></a>\
+                                <h4>Or you can click one of the links below and message me there:</h4>");
     });
 		
     $("#resumebtn").click(function() {

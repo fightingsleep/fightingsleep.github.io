@@ -12,34 +12,12 @@ body{
   font-family: Helvetica;
 }
 
-#emailarrow{
-  font-size: 6em;
-  display: inline-block;
-  vertical-align: top;
-  padding-left: 10px;
-}
-
-#linksarrow{
-  font-size: 6em;
-  margin-left: 20%;
-  margin-bottom: -5%;
-  padding-top: 10px;
-}
-
 #socialnetworks{
   font-size: 1.5em;
   display: inline-block;
   vertical-align: top;
   margin-top: 35px;
   margin-bottom: -35px;
-}
-
-#sendemail{
-  font-size: 1.5em;
-  display: inline-block;
-  vertical-align: top;
-  padding-top: 50px;
-  padding-left: 10px;
 }
 
 #selfThumbnail{
