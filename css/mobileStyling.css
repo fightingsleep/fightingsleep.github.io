@@ -7,6 +7,10 @@
   text-align: center;
 }
 
+.whiteText{
+  color: white;
+}
+
 #aboutme{
   padding-left: 5%;
   padding-right: 5%;
