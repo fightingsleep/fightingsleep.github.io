@@ -41,6 +41,6 @@ $(document).ready(function(){
     });
 		
     $("#resumebtn").click(function() {
-      $("#maindescription").html("<h1>Coming soon!</h1>");
+      window.location.assign("Resume.pdf");
     });
 });
