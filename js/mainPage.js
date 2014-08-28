@@ -41,6 +41,6 @@ $(document).ready(function(){
     });
 		
     $("#resumebtn").click(function() {
-      window.location.assign("Resume.pdf");
+      window.location.assign("Chris_Ross_Resume.pdf");
     });
 });
