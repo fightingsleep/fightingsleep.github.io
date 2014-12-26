@@ -38,7 +38,7 @@ hr{
 
 .navbutton{
   width: 25%;
-  color: #475A24;
+  color: black;
   border-radius: 10px;
   text-align: center;
   display: inline-block;
@@ -50,13 +50,13 @@ hr{
 }
 
 .navbutton:hover{
-  background-color: #C6FF8D;
-  color: black;
+  background-color: #4183C4;
+  color: white;
 }
 
 .activebutton{
-  background-color: #C6FF8D;
-  color: black;
+  background-color: #4183C4;
+  color: white;
 }
 
 .column1{
