@@ -35,8 +35,8 @@ $(document).ready(function(){
   });
 
   $("#contactbtn").click(function() {
-    $("#maindescription").html("<h4>You can contact me by email at chrislross@hotmail.com</h4>\
-                                <a id=\"emaillink\" href=\"mailto:chrislross@hotmail.com\"></a>\
+    $("#maindescription").html("<h4>You can contact me by email at chris@chrislross.com</h4>\
+                                <a id=\"emaillink\" href=\"mailto:chris@chrislross.com\"></a>\
                                 <h4>Or you can click one of the links below and message me there:</h4>");
     });
 		
