@@ -16,6 +16,12 @@
   padding-right: 5%;
 }
 
+#briefSummary {
+  font-family: Helvetica Neue;
+  font-size: 18px;
+  line-height: 20px;
+}
+
 #emaillink{
   background: url(../img/emailicon.png) no-repeat 0px center;
   background-size: 100% 100%;
