@@ -31,6 +31,8 @@ body{
   font-family: Helvetica Neue;
   font-size: 18px;
   line-height: 20px;
+  font-weight: 200;
+  color: rgb(153, 153, 153);
 }
 
 hr{
