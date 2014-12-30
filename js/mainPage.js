@@ -35,7 +35,7 @@ $(document).ready(function(){
       list of pre-defined processes to run. These processes showed that we were able to achieve user\
       level processes, interprocess communication, and basic keyboard & screen I/O. This project gave me a\
       solid understanding of modern operating systems, as well as the arm architecture and assembly\
-      language.</p><h2>Doodle Charades</h2><p>Doodle Charades is a game that me and one other person\
+      language.</p><h2>Paintstream</h2><p>Paintstream is a game that me and one other person\
       made for our web programming class (CMPT 350). This game was made using HTML 5, CSS, Javascript\
       , and Node JS. It would automatically assign a user a word to draw, and all other users had to\
       try to guess the word that the user was drawing. We wrote the server from scratch using Node\
