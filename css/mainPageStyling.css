@@ -45,19 +45,31 @@ hr {
 }
 
 #contactHeading {
-  font-size: 18px;
-  text-decoration: underline;
+  color: #113961;
+  font-weight: 100;
+  font-size: 35px;
+  font-family: Georgia, serif;
+  margin-top: 0px;
+  margin-bottom: 12px;
 }
 
 #contactSubheading {
-  font-size: 14px;
+  color: #113961;
+  font-weight: 300;
+  font-family: Georgia, serif;
+  font-size: 18px;
   display: inline;
 }
 
 #emaillink {
-  color: #083d8d;
+  color: black;
   text-decoration: none;
   display: inline;
+}
+
+#phoneNumber {
+    text-decoration: none;
+    color: black;
 }
 
 .navbutton {
