@@ -1,9 +1,9 @@
-html{
+html {
   height: 100%;
   width: 100%;
 }
 
-body{
+body {
   height: 100%;
   width: 100%;
   color: #000000;
@@ -12,7 +12,16 @@ body{
   font-family: Helvetica;
 }
 
-#socialnetworks{
+hr {
+  border: 0;
+  height: 1;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0));
+  background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0));
+  background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0));
+  background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0)); 
+}
+
+#socialnetworks {
   font-size: 1.5em;
   display: inline-block;
   vertical-align: top;
@@ -20,7 +29,7 @@ body{
   margin-bottom: -35px;
 }
 
-#selfThumbnail{
+#selfThumbnail {
   width: 50%;
   float: left;
   border-radius: 10px;
@@ -32,19 +41,26 @@ body{
   font-size: 18px;
   line-height: 20px;
   font-weight: 200;
-  color: rgb(153, 153, 153);
+  color: #82818c;
 }
 
-hr{
-  border: 0;
-  height: 1;
-  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0));
-  background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0));
-  background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0));
-  background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0)); 
+#contactHeading {
+  font-size: 18px;
+  text-decoration: underline;
 }
 
-.navbutton{
+#contactSubheading {
+  font-size: 14px;
+  display: inline;
+}
+
+#emaillink {
+  color: #083d8d;
+  text-decoration: none;
+  display: inline;
+}
+
+.navbutton {
   width: 25%;
   color: black;
   border-radius: 10px;
@@ -52,82 +68,75 @@ hr{
   display: inline-block;
 }
 
-.navbar{
+.navbar {
   width: 60%;
   display: inline-block;
 }
 
-.navbutton:hover{
+.navbutton:hover {
   background-color: #4183C4;
   color: white;
 }
 
-.activebutton{
+.activebutton {
   background-color: #4183C4;
   color: white;
 }
 
-.column1{
+.column1 {
   width: 20%;
 }
 
-.column2{
+.column2 {
   width: 50%;
 }
 
-.column3{
+.column3 {
   width: 30%;
 }
 
-.column{
+.column {
   min-height: 20%;
   display: inline-block;
   vertical-align: text-top;
 }
 
-#title{
+#title {
   font-family: helvetica;
   font-weight: normal;
   display: inline-block;
   width: 40%;
 }
 
-#linkedin{
+#linkedin {
   background: url(../img/linkedin.png) no-repeat 6px center;
   height: 71px;
   width: 68px;
   display: inline-block;
 }
 
-#github{
+#github {
   background: url(../img/github.png) no-repeat 6px center;
   height: 71px;
   width: 70px;
   display: inline-block;
 }
 
-#emaillink{
-  background: url(../img/emailicon.png) no-repeat 6px center;
-  height: 128px;
-  width: 128px;
-  display: inline-block;
-}
-
-#header{
+#header {
   width: 100%;
   margin-top: 3%;
 }
 
-#footer{
+#footer {
   width: 100%;
   color: #999999;
   font-size: 0.7em;
 }
 
-#footerright{
+#footerright {
   float:right;
 }
 
-#footerleft{
+#footerleft {
   float:left;
 }
