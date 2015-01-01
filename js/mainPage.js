@@ -49,9 +49,9 @@ $(document).ready(function() {
   });
 
   $("#contactbtn").click(function() {
-    $("#maindescription").html("<h1 id=\"contactHeading\">CONTACT ME</h1><h5 id=\"contactSubheading\">Email:</h5>\
+    $("#maindescription").html("<h1 id=\"contactHeading\">Contact me</h1><h5 id=\"contactSubheading\">Email:</h5>\
                                 <a id=\"emaillink\" href=\"mailto:chris@chrislross.com\">chris@chrislross.com</a>\
-                                <br><br><h5 id=\"contactSubheading\">Phone: </h5>1(306)716-9046<br><br>\
+                                <br><br><h5 id=\"contactSubheading\">Phone: </h5><a id=\"phoneNumber\"href=\"tel:+13067169046\">1 (306) 716-9046</a><br><br>\
                                 <h5 id=\"contactSubheading\">LinkedIn & Github:</h5><br><br>");
     });
 		
