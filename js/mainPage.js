@@ -40,7 +40,7 @@ $(document).ready(function() {
       I designed both a desktop version of the site and a simple mobile version. The intention\
       of this website is to describe myself and the work that I've done so far. As time goes on I plan\
       to post more of my personal projects on here and hopefully make it a little bit more interesting.</p>\
-      <h2>Paintstream</h2><p>Paintstream is a game that me and one other person\
+      <h2>Sketchem</h2><p>Sketchem is a game that me and one other person\
       made for our web programming class (CMPT 350). This game was made using HTML 5, CSS, Javascript\
       , and Node JS. It would automatically assign a user a word to draw, and all other users had to\
       try to guess the word that the user was drawing. We wrote the server from scratch using Node\
