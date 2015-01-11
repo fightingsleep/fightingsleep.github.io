@@ -102,6 +102,7 @@ p {
     background-size: cover;
     min-height: 100%;
     display: flex;
+    display: -webkit-flex; /* For Safari */
     align-items: center;
 }
 
