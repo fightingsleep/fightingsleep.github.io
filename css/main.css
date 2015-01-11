@@ -104,6 +104,7 @@ p {
     display: flex;
     display: -webkit-flex; /* For Safari */
     align-items: center;
+    -webkit-align-items: center; /* For Safari */
 }
 
 #introHeading {
