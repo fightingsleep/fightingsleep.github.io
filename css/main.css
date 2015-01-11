@@ -1,0 +1,283 @@
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+
+/* General */
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #4f535f;
+    background-color: #fff;
+    position: relative;
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: left;
+}
+
+.fancyUnderline {
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 15px;
+    width: 50px;
+    border-top: 2px solid #b3b3b1;
+    padding-bottom: 40px;
+}
+
+.paddedContainer {
+    padding: 7.5% 0%;
+    min-height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .paddedContainer {
+        padding-top: 15% !important;
+    }
+}
+
+/* Navigation */
+
+.navbar {
+    background-color: rgba(255,255,255,0.9);
+    padding: 0.6% 0%;
+    letter-spacing: 2px;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    color: #000 !important;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    outline: none;
+    color: #4183C4 !important;
+}
+
+.navbar-nav a:focus,
+.navbar-nav a:hover,
+.navbar-nav .active,
+.navbar-nav a {
+    background-color: transparent !important;
+    outline: none;
+    color: #777 !important;
+}
+
+.navbar-nav a {
+    color: rgba(0,0,0,0.7);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.navbar-nav a:hover {
+    border-bottom: 1px solid #4183C4;
+    color: #4183C4 !important;
+}
+
+.navbar-nav .active {
+    border-bottom: 1px solid #4183C4;
+}
+
+/* Introduction */
+
+#intro {
+    color: #fff;
+    background: url("../img/introBackground.jpg") no-repeat scroll center;
+    background-size: cover;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#introHeading {
+    width: 100%;
+}
+
+.brand-heading {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: -3px;
+    color: #fff;
+}
+
+#brandSubHeading {
+    text-align: center;
+}
+
+.button:focus,
+.button {
+    text-align: center;
+    border-radius: 10px; 
+    color: #4183C4;
+    background: none;
+    border: 2px solid #4183C4;
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 180px;
+    height: 54px;
+    line-height: 54px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    outline: none;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: #fff !important;
+    border: 2px solid #4183C4;
+    outline: none;
+    text-decoration: none;
+    background: #4183C4;
+}
+
+/* About Me */
+
+#about {
+    min-height: 90%;
+    width: 100%;
+}
+
+#about h2 {
+    color: #333332;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#about p {
+    text-align: center;
+    padding: 0% 10%;
+    color: #666665;
+}
+
+#self {
+    height: 40%;
+    width: 40%;
+    border-radius: 50%;
+    margin-bottom: 3%;
+}
+
+/* Projects */
+
+#projects {
+    min-height: 75%;
+    width: 100%;
+    background-color: #F2F3F5;
+}
+
+#projects h3 {
+    font-weight: 200 !important;
+    color: #4183C4;
+}
+
+#projects p {
+    text-align: center;
+    padding: 2% 10%;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+#projects .paddedContainer {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.projectImage {
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+}
+
+@media (max-width: 1200px) {
+    .projectImage {
+        height: 50% !important;
+        width: 50% !important;
+    }
+}
+
+/* Contact */
+
+#contact {
+    min-height: 60%;
+    width: 100%;
+    background-color: #fff;
+}
+
+#contact h3 {
+    text-align: left;
+    color: #4183C4;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-size: 30px;
+    padding-bottom: 2%;
+}
+
+#contact p {
+    color: #000;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 0% !important;
+}
+
+#contactLeftCol {
+    border-right: 1px solid #000;
+}
+
+#contact .paddedContainer {
+    padding-top: 15% !important;
+}
+
+@media (max-width: 991px) {
+    #contact .paddedContainer {
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+    
+    #contactLeftCol {
+        border-right: none !important;
+    }
+}
+
+#linkedIn {
+    height: 60px;
+    width: 60px;
+}
+
+#gitHub {
+    height: 64px;
+    width: 64px;
+    margin-left: 10px;
+}
+
+/* Footer */
+
+#footer {
+    border-top: 1px solid rgba(0,0,0,0.1) !important;
+}
+
+#footer p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 11px;
+    color: #b3b3b3;
+}
