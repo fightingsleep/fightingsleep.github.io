@@ -61,7 +61,7 @@ p {
 
 @media (min-width: 1200px) and (max-width: 1999px) {
     .paddedContainer {
-        padding-top: 9% !important;
+        padding-top: 7% !important;
     }
 }
 
