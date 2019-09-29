@@ -131,12 +131,6 @@ p {
     -webkit-align-items: center;
 }
 
-@media (max-width: 767px) {
-    #intro {
-        background: #000000 !important;
-    }
-}
-
 #introHeading {
     width: 100%;
 }
@@ -261,85 +255,6 @@ p {
     }
 }
 
-/* Projects */
-
-#projects {
-    min-height: 75%;
-    width: 100%;
-    background-color: #F2F3F5;
-}
-
-#projects h3 {
-    font-weight: 200 !important;
-    color: #4183C4;
-}
-
-#projects p {
-    text-align: center;
-    padding: 2% 10%;
-    font-size: 16px;
-    line-height: 28px;
-}
-
-#projects .paddedContainer {
-    padding-left: 15%;
-    padding-right: 15%;
-}
-
-.projectImage {
-    border-radius: 50%;
-}
-
-@media (max-width: 767px) {
-    .projectImage {
-        height: 60% !important;
-        width: 60% !important;
-    }
-    #projects p {
-        padding: 2% 0% !important;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .projectImage {
-        height: 42% !important;
-        width: 42% !important;
-    }
-    #projects p {
-        padding: 2% 5% !important;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    .projectImage {
-        height: 35% !important;
-        width: 35% !important;
-    }
-    #projects p {
-        padding: 2% 10% !important;
-    }
-}
-
-@media (min-width: 1200px) and (max-width: 1999px) {
-    .projectImage {
-        height: 60% !important;
-        width: 60% !important;
-    }
-    #projects p {
-        padding: 2% 0% !important;
-    }
-}
-
-@media (min-width: 2000px) {
-    .projectImage {
-        height: 60% !important;
-        width: 60% !important;
-    }
-    #projects p {
-        padding: 2% 5% !important;
-    }
-}
-
 /* Contact */
 
 #contact {
@@ -393,19 +308,19 @@ p {
 
 @media (min-width: 992px) and (max-width: 1199px) {
     #contact .paddedContainer {
-        padding-top: 12% !important;
+        padding-top: 2% !important;
     }
 }
 
 @media (min-width: 1200px) and (max-width: 1999px) {
     #contact .paddedContainer {
-        padding-top: 12% !important;
+        padding-top: 2% !important;
     }
 }
 
 @media (min-width: 2000px) {
     #contact .paddedContainer {
-        padding-top: 11% !important;
+        padding-top: 1% !important;
     }
 }
 
