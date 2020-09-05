@@ -35,7 +35,10 @@
             <div class="collapse navbar-collapse" id="navigationBar">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#about" class="scrollEvent"  data-id="about">About</a>
+                        <a href="#about" class="scrollEvent" data-id="about">About</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="scrollEvent" data-id="projects">Projects</a>
                     </li>
                     <li>
                         <a href="#contact" class="scrollEvent" data-id="contact">Contact</a>
@@ -65,20 +68,47 @@
                     <img src="img/self.jpg" alt="self.jpg" id="self"></img>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="aboutMeText">
                 <div class="col-md-6 col-md-offset-3">
                     <p>
                         I'm a senior software developer with a Bachelor of Science Honours degree in Computer Science. I currently work in the treasury department at TD Bank on their proprietary financial modelling platform.
-                        <br/>
-                        <br/>
+                    </p>
+                    <p>
                         I've spent a large amount of time over the last few years studying finance and quantitative modelling. I've gained a very solid foundation in fixed income valuation, risk analysis, and derivative pricing. I work daily with PDE, lattice, and Monte Carlo option pricing models.
-                        <br/>
-                        <br/>
+                    </p>
+                    <p>
                         I pride myself on my ability to communicate effectively and translate business requirements into working code. I've had the opportunity to lead several new initiatives at the bank and work directly with key stakeholders.
-                        <br/>
-                        <br/>
+                    </p>
+                    <p>
                         I'm comfortable programming in most major programming languages, and I have experience working in both Linux and Windows development environments. I have strong object oriented programming skills. I currently work mostly with C# and C++ (among other languages like Python and VBA). I also have plenty of real-world experience working with databases, and writing highly concurrent code, from my time at Dell EMC.
                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container-fluid paddedContainer">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <h2>Projects</h2>
+                    <div class="fancyUnderline"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <p>
+                        The majority of my projects can be found on <a href="https://github.com/fightingsleep">GitHub</a>
+                        <a href="https://github.com/fightingsleep"><img src="img/github.png" id="smallGitHub"></img></a>
+                        <br/>
+                        Some examples include:
+                    </p>
+                    <ul>
+                        <li><a href="BrownianMotionSimulation/BrownianMotionSimulation.html">Stock Price Geometric Brownian Motion (JavaScript)</a></li>
+                        <li><a href="https://github.com/fightingsleep/SimpleMonteCarloOptionPricingModel">Monte Carlo Simulation for Option Pricing (C++)</a></li>
+                        <li><a href="https://github.com/fightingsleep/SimpleBinomialOptionPricingModel">Binomial Option Pricing Model (C++)</a></li>
+                        <li><a href="https://github.com/fightingsleep/SimpleBlackScholesCalculator">Black Scholes Calculator (Python)</a></li>
+                        <li><a href="https://github.com/fightingsleep/OS432">Operating System for Raspberry Pi (C/Assembly)</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
