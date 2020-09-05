@@ -19,7 +19,6 @@ body {
 }
 
 p {
-    margin: 0 0 25px;
     font-size: 18px;
     line-height: 36px;
     text-align: left;
@@ -35,7 +34,6 @@ p {
 }
 
 .paddedContainer {
-    padding: 7.5% 0%;
     min-height: 100%;
     width: 100%;
     text-align: center;
@@ -125,8 +123,8 @@ p {
     background: url("../img/introBackground.jpg") no-repeat scroll center;
     background-size: cover;
     height: 100%;
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
     display: -webkit-flex; /* For Safari */
     -webkit-align-items: center;
 }
@@ -200,6 +198,10 @@ p {
     color: #666665;
 }
 
+#aboutMeText {
+    padding-top: 1.5rem;
+}
+
 @media (max-width: 767px) {
     #about p {
         padding: 0% 3.5% !important;
@@ -213,7 +215,7 @@ p {
 
 @media (min-width: 768px) and (max-width: 991px) {
     #about p {
-        padding: 2% 10% !important;
+        padding: 0% 5% !important;
     }
 
     #self {
@@ -224,7 +226,7 @@ p {
 
 @media (min-width: 992px) and (max-width: 1199px) {
     #about p {
-        padding: 4% 0% !important;
+        padding: 0% 7.5% !important;
     }
 
     #self {
@@ -235,7 +237,7 @@ p {
 
 @media (min-width: 1200px) and (max-width: 1999px) {
     #about p {
-        padding: 4% 5% !important;
+        padding: 0% 10% !important;
     }
     
     #self {
@@ -246,13 +248,24 @@ p {
 
 @media (min-width: 2000px) {
     #about p {
-        padding: 0% 17% !important;
+        padding: 0% 12.5% !important;
     }
 
     #self {
         height: 40% !important;
         width: 40% !important;
     }
+}
+
+/* Projects */
+
+#projects {
+    min-height: 50%;
+}
+
+#projects ul {
+    list-style-position: inside;
+    text-align: left;
 }
 
 /* Contact */
@@ -285,42 +298,15 @@ p {
     border-right: 1px solid #000;
 }
 
-@media (max-width: 767px) {
-    #contact .paddedContainer {
-        padding-top: 15% !important;
-        padding-left: 5% !important;
-        padding-right: 5% !important;
-    }    
+@media (max-width: 767px) {  
     #contactLeftCol {
         border-right: none !important;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    #contact .paddedContainer {
-        padding-left: 5% !important;
-        padding-right: 5% !important;
-    }
     #contactLeftCol {
         border-right: none !important;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    #contact .paddedContainer {
-        padding-top: 2% !important;
-    }
-}
-
-@media (min-width: 1200px) and (max-width: 1999px) {
-    #contact .paddedContainer {
-        padding-top: 2% !important;
-    }
-}
-
-@media (min-width: 2000px) {
-    #contact .paddedContainer {
-        padding-top: 1% !important;
     }
 }
 
@@ -333,6 +319,12 @@ p {
     height: 64px;
     width: 64px;
     margin-left: 10px;
+}
+
+#smallGitHub {
+    height: 32px;
+    width: 32px;
+    margin-left: 2px;
 }
 
 /* Footer */
