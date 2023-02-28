@@ -120,7 +120,7 @@ p {
 
 #intro {
     color: #fff;
-    background: url("../img/introBackground.jpg") no-repeat scroll center;
+    background: url("../images/introBackground.jpg") no-repeat scroll center;
     background-size: cover;
     height: 100%;
     display: flex;
