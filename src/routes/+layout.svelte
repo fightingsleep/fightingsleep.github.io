@@ -1,15 +1,14 @@
 <script lang="ts">
   import "../app.pcss";
-  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from "flowbite-svelte";
-  import { Footer, FooterCopyright } from "flowbite-svelte";
+  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Footer, FooterCopyright, DarkMode } from "flowbite-svelte";
 
   const year: number = new Date().getFullYear();
   import { page } from "$app/stores";
   $: activeUrl = $page.url.pathname;
 </script>
 
-<div class="container mx-auto flex min-h-screen max-w-5xl flex-col items-center justify-between">
-  <Navbar>
+<div class="container mx-auto min-h-screen max-w-5xl flex flex-col items-center justify-between">
+  <Navbar class="bg-white dark:bg-black">
     <NavBrand href="/">
       <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
         >Chris Ross</span
@@ -17,9 +16,10 @@
     </NavBrand>
     <NavHamburger />
     <NavUl {activeUrl}>
-      <NavLi href="/experience">Experience</NavLi>
-      <NavLi href="/projects">Projects</NavLi>
-      <NavLi href="/cv">CV</NavLi>
+      <NavLi class="p-2.5 md:p-2.5" href="/experience">Experience</NavLi>
+      <NavLi class="p-2.5 md:p-2.5" href="/projects">Projects</NavLi>
+      <NavLi class="p-2.5 md:p-2.5" href="/cv.pdf">CV</NavLi>
+      <DarkMode />
     </NavUl>
   </Navbar>
 

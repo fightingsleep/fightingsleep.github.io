@@ -18,7 +18,7 @@ const config = {
       "gray-light": "#d3dce6"
     },
     fontFamily: {
-      sans: ["Graphik", "sans-serif"],
+      sans: ["Inter", "sans-serif"],
       serif: ["Merriweather", "serif"]
     },
     extend: {
@@ -36,7 +36,16 @@ const config = {
           800: "#CC4522",
           900: "#A5371B"
         }
-      }
+      },
+      animation: {
+        glide: 'glide 0.8s ease-out forwards',
+      },
+      keyframes: {
+        glide: {
+          '0%': { transform: 'translateX(-3%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+      },
     }
   },
 
