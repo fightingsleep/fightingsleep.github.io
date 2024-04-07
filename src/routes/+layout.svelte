@@ -1,17 +1,19 @@
 <script lang="ts">
   import "../app.pcss";
-  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
-  import { Footer, FooterCopyright } from 'flowbite-svelte';
+  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from "flowbite-svelte";
+  import { Footer, FooterCopyright } from "flowbite-svelte";
 
   const year: number = new Date().getFullYear();
-  import { page } from '$app/stores';
+  import { page } from "$app/stores";
   $: activeUrl = $page.url.pathname;
 </script>
 
-<div class="container mx-auto max-w-5xl min-h-screen flex flex-col justify-between items-center">
+<div class="container mx-auto flex min-h-screen max-w-5xl flex-col items-center justify-between">
   <Navbar>
     <NavBrand href="/">
-      <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Chris Ross</span>
+      <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
+        >Chris Ross</span
+      >
     </NavBrand>
     <NavHamburger />
     <NavUl {activeUrl}>
@@ -21,11 +23,9 @@
     </NavUl>
   </Navbar>
 
-  <div>
-    <slot />
-  </div>
+  <slot />
 
   <Footer class="p-7">
-    <FooterCopyright href="/" by="Chris Ross" year={year} />
+    <FooterCopyright href="/" by="Chris Ross" {year} />
   </Footer>
 </div>
