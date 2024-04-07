@@ -1,16 +1,37 @@
 <script>
-import { images } from '$lib/data/carousel';
-import { Carousel, Heading, P } from 'flowbite-svelte';
-import { scale } from 'svelte/transition';
-import { quintOut } from 'svelte/easing';
+  import { images } from "$lib/data/carousel";
+  import { Carousel, Heading, P, Tooltip } from "flowbite-svelte";
+  import { scale } from "svelte/transition";
+  import { quintOut } from "svelte/easing";
 
-const scaleAnimation = (x) => scale(x, { duration: 500, easing: quintOut });
+  const scaleAnimation = (x) => scale(x, { duration: 800, easing: quintOut });
+
+  let image;
 </script>
 
-<div>
-    <Heading tag="h1" class="mb-4 text-center" customSize="text-4xl font-extrabold md:text-5xl lg:text-6xl">Chris Ross</Heading>
-    <P class="text-center mb-6 text-lg lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Senior Software Developer</P>
-    <Carousel {images} transition={scaleAnimation} class="justify-items-center max-h-24" imgClass="object-contain h-full max-w-28 rounded-sm p-2" duration={3000} />
+<div class="flex flex-col items-center">
+  <Heading
+    tag="h1"
+    class="mb-4 text-center"
+    customSize="text-4xl font-extrabold md:text-5xl lg:text-6xl">Chris Ross</Heading
+  >
+  <P class="mb-6 text-center text-lg dark:text-gray-400 sm:px-16 lg:text-xl xl:px-48"
+    >Senior Software Developer</P
+  >
+  <div class="w-24">
+    <Carousel
+      {images}
+      transition={scaleAnimation}
+      id="carousel"
+      class="flex w-24 max-h-24"
+      imgClass="w-24 h-24 object-contain rounded-sm p-2"
+      duration={1500}
+      on:change={({ detail }) => (image = detail)}
+    />
+    <Tooltip triggeredBy="#carousel" placement="bottom">
+      {image?.alt}
+    </Tooltip>
+  </div>
 </div>
 
 <style>
