@@ -5,6 +5,9 @@
   const year: number = new Date().getFullYear();
   import { page } from "$app/stores";
   $: activeUrl = $page.url.pathname;
+
+  export const prerender = true;
+  export const trailingSlash = "always";
 </script>
 
 <div class="container mx-auto min-h-screen max-w-5xl flex flex-col items-center justify-between">
