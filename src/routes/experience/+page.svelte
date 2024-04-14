@@ -15,8 +15,7 @@
           </span>
         </svelte:fragment>
         <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-          Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar,
-          and pre-order E-commerce & Marketing pages.
+          {company.description}
         </p>
       </TimelineItem>
     {/each}
