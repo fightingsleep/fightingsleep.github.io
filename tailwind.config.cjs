@@ -39,11 +39,16 @@ const config = {
       },
       animation: {
         glide: 'glide 0.8s ease-out forwards',
+        quickfadein: 'quickfadein 0.3s ease-out forwards',
       },
       keyframes: {
         glide: {
           '0%': { transform: 'translateX(-3%)' },
           '100%': { transform: 'translateX(0)' },
+        },
+        quickfadein: {
+          '0%': { transform: 'scale(0.95)', opacity: 0.5 },
+          '100%': { transform: 'scale(1)', opacity: 1 },
         },
       },
     }
