@@ -1,5 +1,6 @@
 <script lang="ts">
   import "../app.pcss";
+  import { base } from '$app/paths';
   import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, Footer, FooterCopyright, DarkMode } from "flowbite-svelte";
 
   const year: number = new Date().getFullYear();
@@ -9,16 +10,16 @@
 
 <div class="container mx-auto min-h-screen max-w-5xl flex flex-col items-center justify-between">
   <Navbar class="bg-white dark:bg-black">
-    <NavBrand href="/">
+    <NavBrand href="{base}/">
       <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
         >Chris Ross</span
       >
     </NavBrand>
     <NavHamburger />
     <NavUl {activeUrl}>
-      <NavLi class="p-2.5 md:p-2.5" href="/experience">Experience</NavLi>
+      <NavLi class="p-2.5 md:p-2.5" href="{base}/experience">Experience</NavLi>
       <NavLi class="p-2.5 md:p-2.5" href="https://github.com/fightingsleep">GitHub</NavLi>
-      <NavLi class="p-2.5 md:p-2.5" href="/cv.pdf">CV</NavLi>
+      <NavLi class="p-2.5 md:p-2.5" href="{base}/cv.pdf">CV</NavLi>
       <DarkMode />
     </NavUl>
   </Navbar>
@@ -26,6 +27,6 @@
   <slot />
 
   <Footer class="p-7">
-    <FooterCopyright href="/" by="Chris Ross" {year} />
+    <FooterCopyright href="{base}/" by="Chris Ross" {year} />
   </Footer>
 </div>
