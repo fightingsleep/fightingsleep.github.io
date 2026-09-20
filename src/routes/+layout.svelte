@@ -17,7 +17,6 @@
     </NavBrand>
     <NavHamburger />
     <NavUl {activeUrl}>
-      <NavLi class="p-2.5 md:p-2.5" href="{base}/experience">Experience</NavLi>
       <NavLi class="p-2.5 md:p-2.5" href="https://github.com/fightingsleep">GitHub</NavLi>
       <NavLi class="p-2.5 md:p-2.5" href="{base}/cv.pdf">CV</NavLi>
       <DarkMode />
