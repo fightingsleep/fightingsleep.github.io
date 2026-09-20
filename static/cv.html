@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Chris Ross — senior software developer working across quantitative finance, risk, cloud platforms, and modeling systems.">
+  <title>Chris Ross — Curriculum Vitae</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+    :root {
+      --paper: #f3f4f1;
+      --ink: #07090b;
+      --ink-soft: #30373b;
+      --muted: #697275;
+      --quiet: #969d9a;
+      --rule: #d7dad5;
+      --accent: #a9c7df;
+      --accent-soft: #e2ebf2;
+      --signal-text: #55728a;
+      --shadow: 0 24px 60px rgba(7, 9, 11, .16);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { background: #dfe4e2; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 10%, rgba(255,255,255,.72), transparent 34rem),
+        #dfe4e2;
+      font-family: Inter, "Segoe UI", Arial, sans-serif;
+      font-size: 9.5pt;
+      line-height: 1.42;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    h1, h2, h3, p { margin-top: 0; }
+
+    .cv-shell { display: grid; gap: 28px; padding: 34px 18px 60px; }
+
+    /* The one-page version keeps the visual language, but makes the content itself the focal point. */
+    .single-page .page-two { display: none; }
+    .single-page .entry-context { display: none; }
+    .single-page .page-one .masthead { padding-top: 6mm; padding-bottom: 6mm; }
+    .single-page .page-one .masthead-grid { margin-top: 5mm; }
+    .single-page .page-one .name { font-size: 54pt; line-height: .84; }
+    .single-page .page-one .contact-row { margin-top: 6mm; padding-top: 3.5mm; }
+    .single-page .experience-entry { grid-template-columns: 40mm minmax(0, 1fr); gap: 5mm; padding: 3.5mm 0 4mm; }
+    .single-page .experience-entry:first-of-type { margin-top: 7px; }
+    .single-page .role-list { gap: 4px 18px; padding-left: 13px; margin-bottom: 0; font-size: 8.15pt; line-height: 1.34; }
+    .single-page .tags { gap: 3px; margin-top: 5px; }
+    .single-page .tag { padding: 2px 4px; font-size: 6.2pt; }
+    .single-page .section-heading { grid-template-columns: auto 1fr; padding-top: 9px; margin-bottom: 4px; }
+    .single-page .section-heading::after { display: none; }
+    .single-page .credentials { padding-top: 4mm; margin-top: 6mm; }
+    .single-page .credential-value { font-size: 8.2pt; }
+    .single-page .credential-value span { font-size: 7.3pt; }
+
+    .profile-mini {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 35mm;
+      gap: 6mm;
+      align-items: stretch;
+      padding: 2mm 0;
+      margin: 3mm 0 2mm;
+    }
+
+    .profile-mini-copy {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 13px;
+      align-items: start;
+    }
+
+    .profile-mini-label,
+    .profile-mini-stat span {
+      color: var(--signal-text);
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 6.3pt;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .profile-mini-label { padding-top: 2px; white-space: nowrap; }
+    .profile-mini-lede { margin: 0; color: var(--ink-soft); font-size: 8.4pt; line-height: 1.3; }
+
+    .profile-mini-stats {
+      display: grid;
+      grid-template-columns: 1fr;
+      border-left: 1px solid var(--rule);
+    }
+
+    .profile-mini-stat { padding: 0 3mm; border-right: 1px solid var(--rule); }
+    .profile-mini-stat:last-child { border-right: 0; }
+    .profile-mini-stat strong { display: block; margin-top: 3px; color: var(--ink); font-family: "Space Grotesk", Inter, sans-serif; font-size: 12pt; font-weight: 600; letter-spacing: -.04em; line-height: 1; }
+    .profile-mini-stat small { display: block; margin-top: 3px; color: var(--muted); font-size: 6.2pt; line-height: 1.15; }
+
+    .page {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 210mm;
+      min-height: 297mm;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 13mm 14mm 10mm;
+      overflow: hidden;
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+
+    .mono,
+    .header-bar,
+    .contact-row,
+    .section-index,
+    .section-note,
+    .quick-label,
+    .entry-date,
+    .project-link,
+    .page-footer {
+      font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    /* The masthead gives the page a digital/editorial identity without turning the CV into a landing page. */
+    .masthead {
+      position: relative;
+      isolation: isolate;
+      margin: -13mm -14mm 0;
+      padding: 7mm 14mm 8mm;
+      color: #f7f7f2;
+      background: var(--ink);
+      border-bottom: 3px solid var(--accent);
+    }
+
+    .page-one .masthead {
+      background-image: url("hero-matrix.png");
+      background-position: center right;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .page-one .masthead {
+      padding-top: 5mm;
+      padding-bottom: 5mm;
+    }
+
+    .page-one .masthead-grid {
+      grid-template-columns: 1fr;
+      margin-top: 6mm;
+    }
+
+    .page-one .name {
+      font-size: 38pt;
+    }
+
+    .page-one .role-line {
+      margin-top: 8px;
+    }
+
+    .page-one .masthead-note {
+      max-width: 250px;
+      padding-top: 6px;
+      font-size: 9pt;
+    }
+
+    .page-one .contact-row {
+      margin-top: 6mm;
+      padding-top: 3.5mm;
+    }
+
+    .masthead::after {
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(7, 9, 11, .96) 0%, rgba(7, 9, 11, .82) 48%, rgba(7, 9, 11, .35) 100%),
+        linear-gradient(0deg, rgba(7, 9, 11, .7), transparent 65%);
+      content: "";
+      pointer-events: none;
+    }
+
+    .header-bar {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      color: #aeb3b0;
+      font-size: 7pt;
+      font-weight: 500;
+    }
+
+    .header-bar strong { color: var(--accent); font-weight: 500; }
+
+    .masthead-grid {
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      gap: 16mm;
+      align-items: end;
+      margin-top: 11mm;
+    }
+
+    .name {
+      margin: 0;
+      color: #f7f7f2;
+      font-family: "Space Grotesk", Inter, sans-serif;
+      font-size: 49pt;
+      font-weight: 600;
+      letter-spacing: -.085em;
+      line-height: .82;
+    }
+
+    .name em { color: #f7f7f2; font-style: normal; }
+
+    .role-line {
+      max-width: 350px;
+      margin: 12px 0 0;
+      color: #bfc5c2;
+      font-size: 9.5pt;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .masthead-note {
+      max-width: 280px;
+      padding: 10px 0 2px 14px;
+      border-left: 2px solid var(--accent);
+      color: #cdd1cd;
+      font-size: 10pt;
+      line-height: 1.48;
+    }
+
+    .masthead-note strong { color: #f7f7f2; font-weight: 700; }
+
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 8px 20px;
+      margin-top: 9mm;
+      padding-top: 5mm;
+      color: #9ea6a3;
+      border-top: 1px solid rgba(210, 224, 219, .22);
+      font-size: 6.8pt;
+    }
+
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      min-width: 0;
+      white-space: nowrap;
+    }
+
+    .contact-icon {
+      flex: 0 0 12px;
+      width: 12px;
+      height: 12px;
+      color: var(--accent);
+      opacity: .9;
+    }
+
+    .contact-row a {
+      border-bottom: 1px solid rgba(210, 224, 219, .26);
+    }
+
+    .contact-row a:hover {
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    .profile-band {
+      margin: 7mm 0 2mm;
+      color: var(--ink-soft);
+      background: transparent;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .profile-band-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 3mm 6mm 2.5mm;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .profile-band-head span:first-child { color: var(--signal-text); font-size: 6.8pt; }
+    .profile-band-head span:last-child { color: var(--quiet); font-size: 6.8pt; }
+
+    .profile-band-main {
+      display: grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 8mm;
+      padding: 3mm 5mm 2.5mm;
+    }
+
+    .profile-lede {
+      max-width: 500px;
+      margin: 0;
+      color: var(--ink);
+      font-size: 10.4pt;
+      letter-spacing: -.025em;
+      line-height: 1.32;
+    }
+
+    .profile-details { display: grid; gap: 7px; align-content: center; }
+    .profile-detail { display: grid; gap: 3px; }
+    .profile-detail span { color: var(--signal-text); font-family: "IBM Plex Mono", monospace; font-size: 6.6pt; letter-spacing: .08em; text-transform: uppercase; }
+    .profile-detail strong { color: var(--ink-soft); font-size: 7.8pt; line-height: 1.3; }
+
+    .profile-metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-top: 1px solid var(--rule);
+    }
+
+    .profile-metric { min-height: 12mm; padding: 2.5mm 5mm; border-right: 1px solid var(--rule); }
+    .profile-metric:last-child { border-right: 0; }
+    .profile-metric span { display: block; margin-bottom: 5px; color: var(--signal-text); font-family: "IBM Plex Mono", monospace; font-size: 6.6pt; letter-spacing: .08em; text-transform: uppercase; }
+    .profile-metric strong { display: block; color: var(--ink); font-family: "Space Grotesk", Inter, sans-serif; font-size: 14pt; font-weight: 600; letter-spacing: -.04em; line-height: 1; }
+    .profile-metric small { display: block; margin-top: 3px; color: var(--muted); font-size: 6.8pt; line-height: 1.2; }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: 28px auto 1fr auto;
+      gap: 10px;
+      align-items: baseline;
+      padding-top: 9px;
+      margin-bottom: 3px;
+      border-top: 2px solid var(--ink);
+    }
+
+    .section-index { color: var(--signal-text); font-size: 7.5pt; font-weight: 500; }
+    .section-heading h2 { margin: 0; color: var(--ink); font-size: 14pt; font-weight: 800; letter-spacing: -.04em; }
+    .section-heading::after { height: 1px; background: var(--rule); content: ""; }
+    .section-note { color: var(--quiet); font-size: 6.8pt; white-space: nowrap; }
+
+    .experience-entry {
+      display: grid;
+      grid-template-columns: 43mm minmax(0, 1fr);
+      gap: 7mm;
+      padding: 4mm 0 4.5mm;
+      border-top: 1px solid var(--rule);
+    }
+
+    .experience-entry:first-of-type { margin-top: 10px; }
+    .entry-meta { min-width: 0; }
+    .entry-date { display: block; margin-bottom: 5px; color: var(--signal-text); font-size: 6.9pt; font-weight: 500; line-height: 1.35; }
+    .entry-company-line { display: flex; align-items: flex-start; gap: 7px; }
+    .company-mark {
+      display: grid;
+      flex: 0 0 23px;
+      place-items: center;
+      width: 23px;
+      height: 23px;
+      margin-top: -1px;
+      overflow: hidden;
+    }
+
+    .company-mark img { display: block; width: 100%; height: 100%; object-fit: contain; }
+    .company-capula { background: var(--ink); border-radius: 6px; }
+    .company-capula img { object-fit: cover; object-position: left center; }
+    .entry-company { margin: 0; color: var(--ink); font-size: 10.5pt; font-weight: 800; letter-spacing: -.035em; line-height: 1.15; }
+    .entry-title { display: block; margin-top: 4px; color: var(--signal-text); font-size: 7.8pt; font-weight: 700; line-height: 1.3; }
+    .entry-body { min-width: 0; }
+    .entry-context { margin: 0 0 7px; color: var(--muted); font-size: 8.2pt; line-height: 1.38; }
+
+    .role-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 4px 21px;
+      padding: 0 0 0 14px;
+      margin: 0 0 9px;
+      color: var(--ink-soft);
+      font-size: 8.2pt;
+      line-height: 1.38;
+    }
+
+    .role-list li { padding-left: 2px; }
+    .role-list li::marker { color: var(--accent); }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 4px; }
+    .tag { padding: 3px 5px; color: var(--signal-text); background: rgba(255,255,255,.42); border: 1px solid #cbd4ce; font-size: 6.7pt; line-height: 1.1; }
+
+    .page-two .masthead { background: var(--ink); }
+    .page-two .masthead-note { border-color: var(--accent); }
+    .page-two .name em { color: var(--accent); }
+
+    .page-two .masthead-grid { grid-template-columns: 1fr auto; align-items: center; margin-top: 8mm; }
+    .page-two .name { font-size: 31pt; line-height: .9; }
+    .page-two .role-line { margin-top: 7px; }
+    .page-two .masthead-note { max-width: 220px; color: #e1e5e3; font-size: 8.8pt; }
+    .page-two .contact-row { margin-top: 6mm; }
+    .page-two .experience-entry { padding: 3.5mm 0 4mm; }
+
+    .lower-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.28fr;
+      gap: 10mm;
+      padding-top: 6mm;
+      margin-top: 2mm;
+      border-top: 2px solid var(--ink);
+    }
+
+    .lower-section h2 { margin: 0 0 12px; font-size: 11pt; font-weight: 800; letter-spacing: -.03em; }
+    .lower-section h2 span { margin-right: 8px; color: var(--signal-text); font-family: "IBM Plex Mono", monospace; font-size: 7pt; font-weight: 500; letter-spacing: .08em; }
+    .expertise-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px 18px; }
+    .expertise-card { padding-top: 8px; border-top: 1px solid var(--rule); }
+    .expertise-card strong { display: block; margin-bottom: 3px; font-size: 7.8pt; }
+    .expertise-card p { margin: 0; color: var(--muted); font-size: 7.5pt; line-height: 1.38; }
+
+    .project-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 0 18px; border-top: 1px solid var(--rule); }
+    .project { display: grid; grid-template-columns: 21px 1fr auto; gap: 5px; align-items: baseline; padding: 7px 0; border-bottom: 1px solid var(--rule); }
+    .project-number { color: var(--signal-text); font-family: "IBM Plex Mono", monospace; font-size: 6.9pt; }
+    .project-name { font-size: 7.4pt; font-weight: 700; line-height: 1.25; }
+    .project-link { color: var(--signal-text); font-size: 5.8pt; }
+    .project-link:hover { color: var(--accent); }
+
+    .credentials {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      padding: 5mm 0 0;
+      margin-top: auto;
+      border-top: 1px solid var(--rule);
+    }
+
+    .credential-label { display: block; margin-bottom: 5px; color: var(--signal-text); font-family: "IBM Plex Mono", monospace; font-size: 6.6pt; letter-spacing: .08em; text-transform: uppercase; }
+    .credential-value { margin: 0; font-size: 7.8pt; font-weight: 700; line-height: 1.35; }
+    .credential-value span { display: block; color: var(--muted); font-size: 7pt; font-weight: 500; }
+    .credential-honours { display: flex; align-items: center; gap: 7px; margin-top: 4px; color: var(--ink); font-family: Inter, "Segoe UI", Arial, sans-serif; font-size: 7.6pt; font-weight: 800; letter-spacing: -.01em; }
+    .credential-honours::before { display: inline-block; width: 22px; height: 2px; background: var(--accent); content: ""; }
+
+    .page-footer {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 5mm;
+      margin-top: auto;
+      color: var(--quiet);
+      border-top: 1px solid var(--rule);
+      font-size: 6.5pt;
+    }
+
+    @media (max-width: 900px) {
+      .cv-shell { padding: 20px 10px 36px; }
+      .page { padding: 10mm 9mm 9mm; }
+      .masthead { margin: -10mm -9mm 0; padding: 7mm 9mm 8mm; }
+      .experience-entry { grid-template-columns: 38mm minmax(0,1fr); gap: 5mm; }
+    }
+
+    @media (max-width: 680px) {
+      html, body { background: var(--paper); }
+      .cv-shell { display: block; padding: 0; }
+      .page { width: auto; min-height: auto; padding: 25px 20px 28px; box-shadow: none; }
+      .page + .page { padding-top: 45px; border-top: 10px solid #dfe4e2; }
+      .masthead { margin: -25px -20px 0; padding: 25px 20px 22px; }
+      .masthead-grid, .page-two .masthead-grid { grid-template-columns: 1fr; gap: 22px; margin-top: 28px; }
+      .name { font-size: 50pt; }
+      .contact-row { justify-content: flex-start; }
+      .profile-band-main { grid-template-columns: 1fr; gap: 20px; }
+      .profile-metrics { grid-template-columns: repeat(2,1fr); }
+      .profile-metric:nth-child(2n) { border-right: 0; }
+      .profile-metric:nth-child(n+3) { border-top: 1px solid var(--rule); }
+      .section-heading { grid-template-columns: 25px auto 1fr; }
+      .section-note { display: none; }
+      .experience-entry { grid-template-columns: 1fr; gap: 12px; }
+      .entry-body { grid-column: 1; }
+      .role-list, .expertise-grid, .project-grid, .lower-grid, .credentials { grid-template-columns: 1fr; }
+      .lower-grid { gap: 30px; }
+      .project-grid { gap: 0; }
+    }
+
+    @media print {
+      @page { size: A4; margin: 0; }
+      html, body { background: #fff; }
+      body { font-size: 9.5pt; }
+      .cv-shell { display: block; padding: 0; }
+      .page { width: 210mm; height: 297mm; min-height: 297mm; margin: 0; padding: 13mm 14mm 5mm; overflow: visible; box-shadow: none; break-after: page; }
+      .page:last-child { break-after: auto; }
+      .masthead { margin: -13mm -14mm 0; padding: 7mm 14mm 8mm; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .single-page .credentials { padding-top: 2mm; margin-top: 2mm; }
+      .single-page .credential-honours { margin-top: 2px; }
+      .tag { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-shell single-page">
+    <article class="page page-one" aria-label="Curriculum vitae — page 1">
+      <header class="masthead">
+        <div class="masthead-grid">
+          <div>
+            <h1 class="name">Chris <em>Ross</em></h1>
+          </div>
+        </div>
+        <div class="contact-row">
+          <span class="contact-item"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-12A7 7 0 1 0 5 9c0 6.4 7 12 7 12Z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg><span>London, UK</span></span>
+          <a class="contact-item" href="mailto:chrislandonross@gmail.com"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg><span>chrislandonross@gmail.com</span></a>
+          <a class="contact-item" href="https://linkedin.com/in/chrislross"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.602 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.454C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg><span>linkedin.com/in/chrislross</span></a>
+          <a class="contact-item" href="https://github.com/fightingsleep"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7a11.7 11.7 0 0 0-3.7 22.8c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.7-1.3-1.7-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.3 1.8 1.3 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.2 11.2 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.3 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.7 11.7 0 0 0 12 .7Z" fill="currentColor"/></svg><span>github.com/fightingsleep</span></a>
+        </div>
+      </header>
+
+      <section class="profile-mini" aria-labelledby="profile-mini-heading">
+        <div class="profile-mini-copy">
+          <span id="profile-mini-heading" class="profile-mini-label">Profile</span>
+          <p class="profile-mini-lede">Technology leader and senior engineer with 11 years across hedge funds, investment banking, fintech, retail banking, and enterprise software. Bridges quantitative finance, software architecture, and applied AI across large enterprises, mid-sized firms, and startups, delivering trading systems, quantitative models, cloud platforms, and internal AI products.</p>
+        </div>
+        <div class="profile-mini-stats">
+          <div class="profile-mini-stat"><span>Experience</span><strong>11</strong><small>years in engineering</small></div>
+        </div>
+      </section>
+
+      <section aria-labelledby="experience-heading">
+        <div class="section-heading"><h2 id="experience-heading">Experience</h2></div>
+
+        <article class="experience-entry">
+          <div class="entry-meta"><span class="entry-date">Apr 2025 — present</span><div class="entry-company-line"><span class="company-mark company-capula"><img src="logos/capula.svg" alt=""></span><div><h3 class="entry-company">Capula Investment Management</h3><span class="entry-title">Senior Developer</span></div></div></div>
+      <div class="entry-body"><p class="entry-context">Front Office Technology and Applied AI within a London-based global investment manager, spanning trading systems, alternative-markets workflows, and internal AI products.</p><ul class="role-list"><li>As the most senior developer on a three-person Applied AI team, shape an AI chat platform with senior investment leadership, connecting it to internal systems and trading strategies for firm-wide rollout.</li><li>Independently led delivery of an order and portfolio management system for the Alternative Markets Alpha desk, working directly with the trading team from discovery through launch.</li><li>Own the design and development of the platform’s artifact system, enabling traders to generate and deploy custom dashboards and other interactive outputs directly from the chat.</li><li>Work on the Front Office Technology team’s Trade Capture System while decommissioning legacy trade-booking systems.</li></ul></div>
+        </article>
+
+        <article class="experience-entry">
+          <div class="entry-meta"><span class="entry-date">Mar 2023 — Mar 2025</span><div class="entry-company-line"><span class="company-mark company-rbc"><img src="logos/rbc.svg" alt=""></span><div><h3 class="entry-company">RBC Capital Markets</h3><span class="entry-title">Senior Developer</span></div></div></div>
+          <div class="entry-body"><p class="entry-context">Cloud analytics platform for counterparty risk and XVA, modernizing quantitative models for scalable delivery.</p><ul class="role-list"><li>Built a cloud-based analytics platform for counterparty risk and XVA calculations, working closely with quantitative researchers to translate models into software.</li><li>Containerized an existing quantitative-modeling library and migrated projects to Linux, improving portability across environments.</li><li>Replaced proprietary workflow infrastructure with Argo Workflows, giving the team a more flexible way to define and run quantitative workloads.</li><li>Delivered cloud-agnostic infrastructure across Azure, AWS, and on-premises environments, enabling Monte Carlo simulations to scale dynamically.</li></ul></div>
+        </article>
+
+        <article class="experience-entry">
+          <div class="entry-meta"><span class="entry-date">Aug 2021 — Feb 2023</span><div class="entry-company-line"><span class="company-mark company-finbourne"><img src="logos/finbourne.svg" alt=""></span><div><h3 class="entry-company">FINBOURNE Technology</h3><span class="entry-title">Engineer</span></div></div></div>
+          <div class="entry-body"><p class="entry-context">Investment-data platform and market-data integrations in a fast-moving financial technology startup.</p><ul class="role-list"><li>Joined a fast-moving startup, taking on broad responsibilities beyond engineering as the company and product evolved.</li><li>Maintained the platform’s SDKs and tooling, and designed a marketplace for third-party integrations.</li><li>Developed core capabilities for a cloud-based investment-data management platform, integrating Bloomberg and other market-data vendors.</li><li>Managed a small team of junior developers while helping deliver a data-virtualization product.</li></ul></div>
+        </article>
+
+        <article class="experience-entry">
+          <div class="entry-meta"><span class="entry-date">Mar 2018 — Jul 2021</span><div class="entry-company-line"><span class="company-mark company-td"><img src="logos/td.svg" alt=""></span><div><h3 class="entry-company">TD Bank</h3><span class="entry-title">Senior Developer</span></div></div></div>
+          <div class="entry-body"><p class="entry-context">Quantitative modeling and treasury technology supporting valuation, risk analysis, and hedging.</p><ul class="role-list"><li>Developed quantitative models for valuation, risk analysis, and hedging across the bank’s balance sheet, translating academic methods into production software.</li><li>Built and integrated distributed services and messaging infrastructure to connect treasury models with the bank’s wider applications and workflows.</li><li>Helped rewrite the treasury modeling library and decommission its predecessor, including models for negative interest rates and related market scenarios.</li><li>Worked directly with quantitative researchers and developers to translate complex valuation and risk models into reliable treasury applications and services.</li></ul></div>
+        </article>
+
+        <article class="experience-entry">
+          <div class="entry-meta"><span class="entry-date">Sep 2015 — Sep 2017</span><div class="entry-company-line"><span class="company-mark company-dell"><img src="logos/dell.svg" alt=""></span><div><h3 class="entry-company">Dell</h3><span class="entry-title">Software Engineer II</span></div></div></div>
+          <div class="entry-body"><p class="entry-context">Data-protection engineering for backup and recovery software used in large data-center environments, with work across Windows, Linux, and Microsoft SQL Server.</p><ul class="role-list"><li>Developed core backup and recovery capabilities for Dell’s enterprise data-center software, supporting large-scale Windows, Linux, and SQL Server environments.</li><li>Engineered highly optimized concurrent code for systems processing petabyte-scale data in enterprise data-center environments.</li></ul></div>
+        </article>
+      </section>
+
+      <div class="credentials"><div><span class="credential-label">Education</span><p class="credential-value">Bachelor of Science Honours, Computer Science<span>University of Saskatchewan · 2011 — 2015</span><strong class="credential-honours">Awarded High Honours</strong></p></div></div>
+
+    </article>
+
+  </div>
+</body>
+</html>
